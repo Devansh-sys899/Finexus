@@ -1,0 +1,35 @@
+{
+  "name": "finexus-backend",
+  "version": "1.0.0",
+  "description": "Conversational AI finance management platform — backend API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "finance",
+    "ai",
+    "chatbot",
+    "express",
+    "mongodb"
+  ],
+  "author": "Finexus Team",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.4.1",
+    "nodemailer": "^6.9.8",
+    "openai": "^6.33.0",
+    "stripe": "^14.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
