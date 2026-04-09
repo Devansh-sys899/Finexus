@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://finexus-5h8c.onrender.com",
   withCredentials: true 
 });
 
