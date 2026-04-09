@@ -29,7 +29,7 @@ const app = express();
 
 // ── 5. Global middleware ──
 app.use(cors({
-  origin: ['finexus-delta.vercel.app', 'finexus-yr5d7v1j7-dishanahar791-7222s-projects.vercel.app'],
+  origin: ['https://finexus-delta.vercel.app', 'https://finexus-yr5d7v1j7-dishanahar791-7222s-projects.vercel.app'],
   credentials: true
 }));
 
