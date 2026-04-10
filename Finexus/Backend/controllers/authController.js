@@ -53,7 +53,11 @@ exports.signup = async (req, res, next) => {
     // Issue token
     const token = signToken(user);
     
-    res.cookie('token', token);
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "None"
+    });
 
     res.status(201).json({
       success: true,
@@ -100,7 +104,11 @@ exports.login = async (req, res, next) => {
     // Issue token
     const token = signToken(user);
 
-    res.cookie('token', token);
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "None"
+    });
 
     res.json({
       success: true,
