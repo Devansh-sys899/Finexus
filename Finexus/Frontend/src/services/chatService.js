@@ -11,7 +11,7 @@
 import axios from "../api/axios";
 
 // ── Configuration ──────────────────────────────
-const CHAT_ENDPOINT = "/webhook";
+const CHAT_ENDPOINT = "/api/webhook";
 const REQUEST_TIMEOUT_MS = 30_000; // 30 s — generous for AI latency
 
 // ── Debug helpers (stripped by tree‑shaking in prod builds) ──
