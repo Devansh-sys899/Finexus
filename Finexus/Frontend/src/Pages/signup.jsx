@@ -36,7 +36,7 @@ const Signup = () => {
         email: form.email,
         password: form.password
       };
-      const res = await axios.post('/auth/signup', payload);
+      const res = await axios.post('/api/auth/signup', payload);
       const token = res.data?.data?.token;
       if (token) {
         localStorage.setItem("token", token);
