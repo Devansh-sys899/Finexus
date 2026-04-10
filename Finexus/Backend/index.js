@@ -29,21 +29,13 @@ const app = express();
 
 // ── 5. Global middleware ──
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['https://finexus-delta.vercel.app', 'https://finexus-yr5d7v1j7-dishanahar791-7222s-projects.vercel.app'],
   credentials: true
 }));
 
 app.use(cookieParser());
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
-
-// Request logger (development only)
-if (config.nodeEnv === "development") {
-  app.use((req, _res, next) => {
-    console.log(`→ ${req.method} ${req.originalUrl}`);
-    next();
-  });
-}
 
 // ── 6. Health check ──
 app.get("/", (_req, res) => {
